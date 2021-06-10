@@ -7,10 +7,27 @@ class App extends StatelessWidget {
   Widget build(BuildContext ctx) {
     return MaterialApp(
       home: Scaffold(
-          appBar: AppBar(
-            title: Text('My First App'),
-          ),
-          body: Text('This is the body section')),
+        appBar: AppBar(
+          title: Text('My First App'),
+        ),
+        body: Column(
+          children: <Widget>[
+            Text('The Question'),
+            RaisedButton(
+              child: Text('Answer 1'),
+              onPressed: null,
+            ),
+            RaisedButton(
+              child: Text('Answer 2'),
+              onPressed: null,
+            ),
+            RaisedButton(
+              child: Text('Answer 3'),
+              onPressed: null,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
