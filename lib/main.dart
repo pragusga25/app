@@ -3,7 +3,14 @@ import 'package:flutter/material.dart';
 void main() => runApp(App());
 
 class App extends StatelessWidget {
+  @override
   Widget build(BuildContext ctx) {
-    return MaterialApp(home: Text('Hello World'));
+    return MaterialApp(
+      home: Scaffold(
+          appBar: AppBar(
+            title: Text('My First App'),
+          ),
+          body: Text('This is the body section')),
+    );
   }
 }
